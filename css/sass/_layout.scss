@@ -1,0 +1,179 @@
+// menu
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 16px;
+}
+
+@media screen and (max-width: 1150px){
+    .menu-left {
+        display: none;
+    }
+    .menu-right {
+        display: none;
+    }
+}
+
+// scrollbar
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: $black-light;
+}
+
+// sections
+
+section {
+    height: 100%;
+}
+
+// container
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .flex-end {
+        justify-content: center;
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    height: 90vh;
+}
+
+@media screen and (max-width: 1150px){
+    .hero {
+        height: auto;
+    }
+    .container {
+        flex-direction: column;
+    }
+}
+
+
+.container-item:nth-child(1) {
+    flex-grow: 2;
+    margin: 0px 20px;
+}
+
+.container-item:nth-child(2) {
+    flex-grow: 1;
+    margin: 40px 0px;
+
+    img {
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .container-item:nth-child(2) {
+        img {
+            max-width: 300px;
+        }
+    }
+}
+
+.bg-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1150px) {
+    .svg-hero {
+        transform: scale(1.5) rotate(20deg) translateY(15vw);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .svg-hero {
+        transform: scale(1.7) rotate(20deg) translateY(15vw);
+    }
+    
+}
+
+// trabalhos principais
+
+.bb-gray{
+    width: 100%;
+    border-bottom: 1px solid $black-light;
+}
+
+.list-item {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    a {
+        &:hover {
+            & + .img-project { //pega o próximo elemento do a
+                max-width: 600px;
+               transform: translate(-30%, -50%) translate3d(0, 0, 0);
+            }
+        }
+    }
+}
+
+.img-project {
+    max-width: 0px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 1s ease;
+    transform: translate(0, -50%) translate3d(0, 0, 0) skew(50deg);
+}
+
+.social {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.icon {
+    width: 32px;
+}
+
+.mail, .git, .lkdn {
+    position: relative;
+    display: flex;
+    padding: 16px 24px;
+    justify-content: flex-start;
+    align-items: center;
+}

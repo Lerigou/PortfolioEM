@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@import './sass/cores';
+@import './sass/tipografia';
+
+body {
+    width: 100%;
+
+    background-color: $black-dark;
+}
+
+.border{
+    border: 1px solid #5d29e1;
+}
+
+@import './sass/espacos';
+@import './sass/layout';
+
