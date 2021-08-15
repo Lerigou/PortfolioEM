@@ -1037,6 +1037,14 @@ section {
           transform: translate(-30%, -50%) translate3d(0, 0, 0);
 }
 
+@media screen and (max-width: 1150px) {
+  .list-item a:hover + .img-project {
+    max-width: 0px;
+    -webkit-transform: translate(0%, 0%) translate3d(0, 0, 0);
+            transform: translate(0%, 0%) translate3d(0, 0, 0);
+  }
+}
+
 .img-project {
   max-width: 0px;
   border-radius: 4px;
