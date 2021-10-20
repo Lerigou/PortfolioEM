@@ -72,7 +72,6 @@ section {
     }
 }
 
-
 .container-item:nth-child(1) {
     flex-grow: 2;
     margin: 0px 20px;
@@ -189,4 +188,18 @@ section {
     padding: 16px 24px;
     justify-content: flex-start;
     align-items: center;
+}
+
+.infoW {
+    height: 90vh;
+}
+
+.container-img {
+    width: 90%;
+}
+
+@media screen and (max-width: 1150px){
+    .infoW {
+        height: auto;
+    }
 }

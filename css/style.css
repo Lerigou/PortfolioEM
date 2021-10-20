@@ -54,6 +54,11 @@ a {
   width: 70%;
 }
 
+.links {
+  -webkit-text-decoration: underline #4c08f6;
+          text-decoration: underline #4c08f6;
+}
+
 h1 {
   font-size: 96px;
   line-height: 100%;
@@ -94,6 +99,14 @@ h5 {
 h6 {
   font-size: 18px;
   line-height: 150%;
+}
+
+::-moz-selection {
+  background-color: rgba(255, 255, 255, 0.405);
+}
+
+::selection {
+  background-color: rgba(255, 255, 255, 0.405);
 }
 
 .mask {
@@ -1078,5 +1091,19 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.infoW {
+  height: 90vh;
+}
+
+.container-img {
+  width: 90%;
+}
+
+@media screen and (max-width: 1150px) {
+  .infoW {
+    height: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
