@@ -1045,7 +1045,7 @@ section {
 }
 
 .list-item a:hover + .img-project {
-  max-width: 600px;
+  max-width: 400px;
   -webkit-transform: translate(-30%, -50%) translate3d(0, 0, 0);
           transform: translate(-30%, -50%) translate3d(0, 0, 0);
 }

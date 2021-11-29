@@ -143,7 +143,7 @@ section {
     a {
         &:hover {
             & + .img-project { //pega o próximo elemento do a
-                max-width: 600px;
+                max-width: 400px;
                transform: translate(-30%, -50%) translate3d(0, 0, 0);
             }
         }
